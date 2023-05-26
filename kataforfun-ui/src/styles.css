@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+.navbar-brand {
+  height: 60px;
+  padding-top: 5px;
+  }
+.success {
+  border: 1px solid;
+  margin: 10px 0px;
+  padding: 15px 10px 15px 50px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  color: #4F8A10;
+  background-color: #DFF2BF;
+  border-radius: 10px;
+  }
+ul {
+  list-style-type: none;
+  }
+.error {
+  color: #ff0000;
+}

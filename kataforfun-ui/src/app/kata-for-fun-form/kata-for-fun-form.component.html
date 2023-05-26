@@ -1,0 +1,22 @@
+<div class="container"> 
+  <div>
+    <h1>Kata For Fun</h1>
+      <h4>Number to convert</h4>
+  </div>
+  <form (ngSubmit)="submitNumber()">
+    <div>
+      <label for="numberValue">Enter a number:</label>
+      <input [(ngModel)]="numberInput" id="numberValue" name="numberValue" [formControl]="numberValue" required>
+      <div *ngIf="numberValue.invalid && (numberValue.dirty || numberValue.touched)">
+        <div *ngIf="numberValue.errors.required" class="error">
+          Number is required.
+        </div>
+        <div *ngIf="numberValue.errors.pattern" class="error">
+          Invalid number format.
+        </div>
+      </div>
+        <br>
+      <button type="submit" [disabled]="numberValue.invalid">Convert</button>
+    </div>
+  </form>      
+</div>
